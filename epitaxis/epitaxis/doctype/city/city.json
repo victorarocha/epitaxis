@@ -1,13 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "prompt",
+ "autoname": "field:city_code",
  "creation": "2024-12-01 12:40:48.735683",
  "description": "ID",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "city"
+  "city",
+  "city_code"
  ],
  "fields": [
   {
@@ -16,15 +17,22 @@
    "in_list_view": 1,
    "label": "City",
    "reqd": 1
+  },
+  {
+   "fieldname": "city_code",
+   "fieldtype": "Data",
+   "label": "City Code",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-01 12:48:35.048891",
+ "modified": "2024-12-30 16:36:02.341751",
  "modified_by": "Administrator",
  "module": "Epitaxis",
  "name": "City",
- "naming_rule": "Set by user",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -40,7 +48,9 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "city"
 }
