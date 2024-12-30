@@ -56,13 +56,13 @@
    "fieldname": "felonies",
    "fieldtype": "Table",
    "label": "Felonies",
-   "options": "Felony"
+   "options": "Felony Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-12-01 13:21:39.382422",
+ "modified": "2024-12-26 17:38:02.031182",
  "modified_by": "Administrator",
  "module": "Epitaxis",
  "name": "Investigation File",
