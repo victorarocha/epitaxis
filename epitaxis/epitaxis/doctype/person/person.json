@@ -5,22 +5,26 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
+  "first_name",
   "father_lastname",
-  "lastname",
-  "birthdate"
+  "mother_lastname",
+  "gender",
+  "ocuppation",
+  "academic_degree",
+  "full_name",
+  "column_break_rzdz",
+  "birthdate",
+  "ine",
+  "curp",
+  "nationality",
+  "marital_status",
+  "current_address",
+  "landline_phone_number",
+  "mobile_phone_number",
+  "section_break_wvus",
+  "profile_picture"
  ],
  "fields": [
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name"
-  },
-  {
-   "fieldname": "lastname",
-   "fieldtype": "Data",
-   "label": "Mother Lastname"
-  },
   {
    "fieldname": "birthdate",
    "fieldtype": "Date",
@@ -29,12 +33,101 @@
   {
    "fieldname": "father_lastname",
    "fieldtype": "Data",
-   "label": "Father Lastname"
+   "in_list_view": 1,
+   "label": "Father Lastname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mother_lastname",
+   "fieldtype": "Data",
+   "label": "Mother Lastname"
+  },
+  {
+   "fieldname": "column_break_rzdz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ine",
+   "fieldtype": "Data",
+   "label": "INE"
+  },
+  {
+   "fieldname": "curp",
+   "fieldtype": "Data",
+   "label": "CURP"
+  },
+  {
+   "default": "Mexicano",
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Nationality"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "Soltero\nCasado\nDivorciado\nUni\u00f3n Libre"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Femenino\nMasculino"
+  },
+  {
+   "fieldname": "ocuppation",
+   "fieldtype": "Data",
+   "label": "Ocuppation"
+  },
+  {
+   "fieldname": "academic_degree",
+   "fieldtype": "Select",
+   "label": "Academic Degree",
+   "options": "Preescolar\nPrimaria\nSecundaria\nPreparatoria\nLicenciatura\nMaestr\u00eda\nDoctorado"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Small Text",
+   "label": "Current Address"
+  },
+  {
+   "fieldname": "landline_phone_number",
+   "fieldtype": "Phone",
+   "label": "Landline Phone Number"
+  },
+  {
+   "fieldname": "mobile_phone_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Phone Number"
+  },
+  {
+   "fieldname": "section_break_wvus",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "profile_picture",
+   "fieldtype": "Attach Image",
+   "label": "Profile Picture"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
   }
  ],
+ "image_field": "profile_picture",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-01 13:00:51.152716",
+ "modified": "2024-12-31 00:18:03.397004",
  "modified_by": "Administrator",
  "module": "Epitaxis",
  "name": "Person",
@@ -53,7 +146,9 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }
