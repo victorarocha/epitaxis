@@ -93,11 +93,13 @@
    "label": "Current Address"
   },
   {
+   "default": "+52-",
    "fieldname": "landline_phone_number",
    "fieldtype": "Phone",
    "label": "Landline Phone Number"
   },
   {
+   "default": "+52-",
    "fieldname": "mobile_phone_number",
    "fieldtype": "Phone",
    "label": "Mobile Phone Number"
@@ -133,7 +135,7 @@
  "image_field": "profile_picture",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-06 12:05:34.682911",
+ "modified": "2025-01-06 13:49:10.102521",
  "modified_by": "Administrator",
  "module": "Epitaxis",
  "name": "Person",

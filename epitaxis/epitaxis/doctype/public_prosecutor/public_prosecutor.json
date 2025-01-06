@@ -1,14 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-01-06 12:09:14.003766",
+ "creation": "2025-01-06 12:46:42.107407",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "person",
-  "professional_id",
-  "professional_email",
-  "professional_mobile_phone"
+  "office_affiliation",
+  "employee_number"
  ],
  "fields": [
   {
@@ -20,31 +19,26 @@
    "reqd": 1
   },
   {
-   "fieldname": "professional_id",
-   "fieldtype": "Data",
+   "fieldname": "office_affiliation",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Professional ID",
+   "label": "Office Affiliation",
+   "options": "Prosecutor Office",
    "reqd": 1
   },
   {
-   "fieldname": "professional_email",
+   "fieldname": "employee_number",
    "fieldtype": "Data",
-   "label": "Professional email",
-   "options": "Email"
-  },
-  {
-   "default": "+52-",
-   "fieldname": "professional_mobile_phone",
-   "fieldtype": "Phone",
-   "label": "Professional mobile phone"
+   "label": "Employee Number",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-06 12:42:23.221165",
+ "modified": "2025-01-06 13:03:54.451792",
  "modified_by": "Administrator",
  "module": "Epitaxis",
- "name": "Lawyer",
+ "name": "Public Prosecutor",
  "owner": "Administrator",
  "permissions": [
   {

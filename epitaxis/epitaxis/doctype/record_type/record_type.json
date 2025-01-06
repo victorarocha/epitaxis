@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-01-06 13:08:18.068878",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_record",
+  "record_template"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_record",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type of Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "record_template",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Record Template",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-06 13:24:59.903351",
+ "modified_by": "Administrator",
+ "module": "Epitaxis",
+ "name": "Record Type",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "type_of_record"
+}
